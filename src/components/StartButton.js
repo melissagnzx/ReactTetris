@@ -1,5 +1,5 @@
 import React from "react";
-
+import { StyledStartButton } from "./styles/StyledStartButton";
 export default function StartButton({ callback }) {
-  return <div>Start Game</div>;
+  return <StyledStartButton onClick={callback}>Start Game</StyledStartButton>;
 }
