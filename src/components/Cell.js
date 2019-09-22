@@ -5,5 +5,5 @@ import { TETROMINOS } from "../tetrominos";
 const Cell = ({ type }) => (
   <StyledCell type={type} color={TETROMINOS[type].color} />
 );
-
-export default Cell;
+//only rerender cells that are impacted by tetrominos
+export default React.memo(Cell);
